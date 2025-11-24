@@ -1,4 +1,5 @@
 import turtle
+import time
 
 screen = turtle.Screen()
 screen.title("Snake Game 1")
@@ -42,4 +43,5 @@ def move():
 
 while True:
     screen.update()
+    time.sleep(0.1)
     move()
