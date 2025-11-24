@@ -82,7 +82,10 @@ while True:
         for segment in segments:
             segment.goto(1000, 1000)
         
-        segments.clear() 
+        segments.clear()
+        score = 0
+        pen.clear()
+        pen.write(f"Score: {score}\nHigh Score: {high_score}", align="center", font=("Courier", 24, "bold")) 
     
     for segment in segments:
         if head.distance(segment) < 20:
@@ -94,6 +97,9 @@ while True:
                 s.goto(1000, 1000)
 
             segments.clear()
+            score = 0
+            pen.clear()
+            pen.write(f"Score: {score}\nHigh Score: {high_score}", align="center", font=("Courier", 24, "bold"))
  
     if head.distance(food) < 20:
         x = random.randint(-280, 280)
