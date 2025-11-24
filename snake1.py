@@ -16,6 +16,14 @@ head.speed(0)
 
 head.direction = "stop"
 
+food = turtle.Turtle()
+food.shape("circle")
+food.color("green")
+food.penup()
+food.goto(0, 100)
+food.shapesize(0.8)
+food.speed(0)
+
 def go_up():
     head.direction = "up"
 def go_down():
